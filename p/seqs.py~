@@ -1,0 +1,20 @@
+#!/usr/bin/env python
+'''
+nt.py
+
+Contains a few utilities for looking up nucleotide level info 
+for zhang lab sequences of interest.
+
+'''
+
+import compbio.config as cfg
+from Bio import SeqIO
+
+seqfiles = {
+    'nrx':cfg.dataPath('sequences/zhang/nrx_human_nt.gb'),
+    'nrx':cfg.dataPath('sequences/zhang/nlg_human_nt.gb')                   
+    }
+
+def seqs( name = 'nrx' ):
+    seq = SeqIO.parse(open(seqfiles[name]), 'genbank')
+    return seq
