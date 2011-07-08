@@ -1,0 +1,67 @@
+#!/usr/bin/env python
+import sys, re
+
+
+def center_residue(res):
+    lines_in = sys.stdin.readlines()
+    lines_out = []
+    found = False
+    for l in lines_in:
+        if 'transform' in l:
+            l = re.sub(re.compile('transform .*;'),
+                   'transform atom * by centre position res-atom {0} *;'.\
+                       format(res, res +1),
+                       l)
+            found = True
+        lines_out.append(l)
+    if not found: raise Exception('seed "transform" line not found')
+    sys.stdout.writelines(lines_out)
+
+def label_residues(res,res_finish):
+    lines_in = sys.stdin.readlines()
+    lines_out = []
+    found = False
+    for l in lines_in:
+        if 'transform' in l:
+            lines_out.append(l)
+            found = True
+            lines_out.append('  set labeloffset 2 2 2;\n')
+            for r in range(res,res_finish):
+                lines_out.append('    label res-atom {0} CA "%t";\n'.format(r));
+        else:
+            lines_out.append(l)
+    if not found: raise Exception('seed "transform" line not found')
+    sys.stdout.writelines(lines_out)
+
+
+def usage():
+    print '''
+Usage bio [func_name] [input]
+
+func_name:
+  cent_r:  [res=1]        center the plot on a specific residue
+  lab_r:   [res=1 res_finish=5]        center the plot on a specific residue
+  col_r:   [res=1]   [black] color a residue a certain color
+  col_a:   [aa=GLY]  [black] color an amino acid a certain color  
+
+'''
+    return 0
+  
+
+if __name__ == '__main__':
+    args = sys.argv[1:] if len(sys.argv) > 1 else exit(usage())
+    prog = args[0]
+                  
+    if prog == 'cent_r':
+        
+        res = 1 if len(args) < 2  else int(args[1])
+        center_residue(res)
+    elif prog == 'lab_r':
+        res = 1 if len(args) < 2  else int(args[1])
+        res_finish= 5 if len(args) < 3  else int(args[2])     
+        label_residues(res,res_finish)
+    else:
+        raise Exception()
+                
+
+    exit(0)

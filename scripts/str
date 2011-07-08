@@ -1,0 +1,160 @@
+#!/usr/bin/env python
+import Bio.PDB as PDB
+import Bio.PDB.PDBIO as pio
+from numpy import *
+import numpy as np
+import sys
+import re
+import structs
+import Bio.PDB.PDBIO as PDBIO
+
+elts = ['Ac', 'Al', 'Am', 'Sb', 'Ar', 'As', 'At', 'Ba', 'Bk', 'Be', 'Bi', 'Bh', 'B', 'Br', 'Cd', 'Ca', 'Cf', 'C', 'Ce', 'Cs', 'Cl', 'Cr', 'Co', 'Cn', 'Cu', 'Cm', 'Ds', 'Db', 'Dy', 'Es', 'Er', 'Eu', 'Fm', 'F', 'Fr', 'Gd', 'Ga', 'Ge', 'Au', 'Hf', 'Hs', 'He', 'Ho', 'H', 'In', 'I', 'Ir', 'Fe', 'Kr', 'La', 'Lr', 'Pb', 'Li', 'Lu', 'Mg', 'Mn', 'Mt', 'Md', 'Hg', 'Mo', 'Nd', 'Ne', 'Np', 'Ni', 'Nb', 'N', 'No', 'Os', 'O', 'Pd', 'P', 'Pt', 'Pu', 'Po', 'K', 'Pr', 'Pm', 'Pa', 'Ra', 'Rn', 'Re', 'Rh', 'Rg', 'Rb', 'Ru', 'Rf', 'Sm', 'Sc', 'Sg', 'Se', 'Si', 'Ag', 'Na', 'Sr', 'S', 'Ta', 'Tc', 'Te', 'Tb', 'Tl', 'Th', 'Tm', 'Sn', 'Ti', 'W', 'Uuh', 'Uuo', 'Uup', 'Uuq', 'Uus', 'Uut', 'U', 'V', 'Xe', 'Yb', 'Y', 'Zn', 'Zr']
+
+
+def struct_center():
+    struct = structs.read_struct(sys.stdin)
+    coords =  array([a.get_coord() for a in struct.get_atoms()])
+    center = np.mean(coords, 0)
+    
+    for a in struct.get_atoms():
+        a.set_coord(a.get_coord() - center)
+
+    
+    io=PDBIO() 
+    io.set_structure(struct) 
+    io.save(sys.stdout)
+    
+    
+    return
+    
+def residue_up(num):
+    struct = structs.read_struct(sys.stdin)
+    residues = struct.get_residues()
+    
+    #print struct.get_atoms().next()
+
+    for i in range(num - 1): 
+        rtmp = residues.next()
+        #print rtmp
+    r = residues.next()
+    center = np.mean([a.get_coord() for a in r.get_list()] , 0)
+
+    #all_coords = [a.get_coord() for a in struct.get_atoms()]
+    #center = mean(all_coords, 0)
+
+    unit = center / sqrt(sum(square(center)))
+    ax = array([0.,1.,0.])
+    crp = np.cross(unit,ax)
+    crp = crp / sqrt(sum(square(crp)))
+
+    dp = sum(unit*ax)
+    theta = arccos(dp)
+    ct = cos(theta); st = sin(theta)
+    x,y,z = crp
+    r = array([[ct + x**2*(1 - ct), x*y*(1-ct) -z*st,x*z*(1-ct) + y*st],
+               [x*y*(1-ct)+z*st, ct + y**2*(1-ct) , y*z*(1-ct) - x*st],
+               [z*x*(1-ct) - y*st, z*y*(1 - ct) + x*st, ct + z**2*(1 - ct)]])
+    
+    #print dot(r, unit)
+    #print dot(r, crp)
+    #print crp
+    #print unit, crp, dp, theta
+
+    for a in struct.get_atoms():
+        a.set_coord(dot(r, a.get_coord()))
+
+
+    io=PDBIO() 
+    io.set_structure(struct) 
+    io.save(sys.stdout)
+
+    #sys.stdout.writelines([str(center)])
+    
+    return
+
+def rs2pdb():
+    lines_in = sys.stdin.readlines()
+    lines_out = []
+    found = False
+    for l in lines_in:
+        if 'TER' == l[0:3]:
+            found = True
+            lines_out.append(l)
+            lines_out.append('END\n')
+            break
+        lines_out.append(l)
+    if not found: raise Exception('Found no terminal Amino Acid...')
+    sys.stdout.writelines(lines_out)
+
+def fix_pdb():
+    lines_in = sys.stdin.readlines()
+    lines_out = []
+    found = False
+    esrt = sorted(elts, key= lambda x: -1 * len(x))
+    for l in lines_in:
+        if 'ATOM' == l[0:4]:
+            cols = re.split(re.compile('\s*'), l)
+            ckeep = cols[0:8]
+            keep = l[0:54]
+            maybe= l[54:]
+            #elt = ' '.join(cols[11:]).strip()
+            elt = l[76:78]
+            if not elt.strip() in elts:
+                elt_guess = re.search(re.compile('[A-z]+'),keep[12:16]).group()
+                #print re.search(re.compile('[A-z]*'),keep[12:16])
+                #print keep[12:16]
+                #print elt_guess
+                e_correct = None
+                for e in esrt: 
+                    if elt_guess[0:len(e)] == e:
+                        e_correct = e
+                        break
+                if e_correct == None: raise Exception()
+                l = l.replace('\n',' ')
+                l = list(l)
+                l.extend([' ']*(80 - len(l)));
+                l[76:78] = ' '*(2 - len(e_correct)) + e_correct
+                l = ''.join(l[:78])+'\n'
+            lines_out.append(l)
+        elif 'TER' == l[0:3]:
+            
+            l = l[0:3] + '\n'
+            lines_out.append(l)
+        else:
+            lines_out.append(l)
+
+    sys.stdout.writelines(lines_out)
+    
+      
+
+  
+
+def usage():
+    print '''
+Usage str [func_name] [input]
+
+func_name:
+
+  rs2pdb:   converts stdin rasmol file to a PDB file. 
+  fix:   converts a broken pdb to a less broken pdb
+  cent:     center a pdb file on a residue 
+  rup:      rotate a pdb file so that a residue is on top.
+
+'''
+    return 0
+  
+
+if __name__ == '__main__':
+    args = sys.argv[1:] if len(sys.argv) > 1 else exit(usage())
+    prog = args[0]
+                  
+    if prog == 'rs2pdb':
+        rs2pdb()
+    elif prog == 'cent':
+        struct_center()
+    elif prog == 'rup':
+        num = 1 if len(args) < 2 else int(args[1])
+        residue_up(num)
+    elif prog == 'fix':
+        fix_pdb()
+    exit(0)

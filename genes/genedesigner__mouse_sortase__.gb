@@ -1,0 +1,54 @@
+LOCUS       Mouse_Optimized_Sortase_few     435 bp    DNA         SYN       27-5-2011
+ACCESSION   Mouse Optimized Sortase (AA 60-206)
+KEYWORDS    
+SOURCE      Synthetic
+  ORGANISM  Synthetic
+COMMENT     
+FEATURES             Location/Qualifiers
+     source          1..435
+                     /organism="Synthetic"
+     CDS             1..435
+                     /gene="AA 61 - 206"
+                     /codon_start=1
+                     /translation="KPQIPKDKSKVAGYIEIPDADIKEPVYPGPATPEQLNRGVSFAE
+                     ENESLDDQNISIAGHTFIDRPNYQFTNLKAAKKGSMVYFKVGNETRKYKMTSIRDVKP
+                     TDVGVLDEQKGKDKQLTLITADDYNEKTGVWEKRKIFVATEVK"
+ORIGIN
+        1 aagccacaaa ttcctaaaga caaaagcaag gttgcaggtt acatagaaat cccagatgcc
+       61 gatatcaagg agccagtcta tcctgggcca gctaccccgg agcagctgaa tagaggggta
+      121 tcattcgccg aggagaacga aagtctggac gatcaaaaca tcagcatcgc aggccacact
+      181 tttatagacc ggccgaacta ccagttcacc aatctgaaag ccgcaaaaaa gggcagcatg
+      241 gtgtatttca aagtcggtaa cgaaacccgg aagtacaaga tgacctccat ccgcgatgtg
+      301 aaacctaccg acgtgggcgt gttggacgaa cagaagggaa aagacaaaca gctgactctg
+      361 atcacagccg acgactacaa cgagaaaact ggcgtttggg agaagcggaa gatatttgta
+      421 gccacggagg tgaag
+//
+LOCUS       Mouse_Optomized_Sortase    618 bp    DNA         SYN       27-5-2011
+ACCESSION   Mouse Optomized Sortase (All AA)
+KEYWORDS    
+SOURCE      Synthetic
+  ORGANISM  Synthetic
+COMMENT     
+FEATURES             Location/Qualifiers
+     source          1..618
+                     /organism="Synthetic"
+     CDS             1..618
+                     /gene="AA 1 - 206"
+                     /codon_start=1
+                     /translation="KKWTNRLMTIAGVVLILVAAYLFAKPHIDNYLHDKDKDEKIEQY
+                     DKNVKEQASKDNKQQAKPQIPKDKSKVAGYIEIPDADIKEPVYPGPATPEQLNRGVSF
+                     AEENESLDDQNISIAGHTFIDRPNYQFTNLKAAKKGSMVYFKVGNETRKYKMTSIRDV
+                     KPTDVEVLDEQKGKDKQLTLITCDDYNEKTGVWEKRKIFVATEVK*"
+ORIGIN
+        1 aaaaagtgga ctaaccgact catgactatc gccggtgtgg tgttgatcct ggttgcggct
+       61 tatctttttg ccaagccgca catcgataat tatctacatg ataaggacaa ggacgaaaag
+      121 atagaacaat acgacaaaaa cgtgaaggag caagcgtcga aagataacaa gcagcaggcc
+      181 aagccccaga ttcccaaaga caagagcaag gtagctggct atattgaaat acctgatgcc
+      241 gacattaagg agcctgtgta tcccggacca gccacaccgg aacagttgaa tagaggagtc
+      301 tccttcgctg aagagaatga aagcctggat gaccagaata tctctatagc cgggcacacc
+      361 ttcattgatc gaccaaacta ccagtttacg aacctgaagg ctgccaaaaa gggatcaatg
+      421 gtgtacttca aagtgggcaa tgaaacgaga aagtacaaga tgacatcgat tagagatgtg
+      481 aaacccacgg acgtagaggt gcttgatgaa caaaagggca aggacaagca gttgacattg
+      541 attacgtgcg acgactataa cgaaaaaact ggcgtctggg aaaagcggaa aatctttgtg
+      601 gctacggagg taaagtag
+//

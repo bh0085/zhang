@@ -4,6 +4,7 @@ import Bio.SeqRecord as srec
 import Bio.Seq as Seq
 import sys
 
+
 def gb_read():
     recs = list(sio.parse(sys.stdin, 'genbank'))
     sys.stdout.write('\n'.join([str(r.seq) for r in recs])+'\n')
@@ -12,16 +13,42 @@ def fa_read():
     recs = list(sio.parse(sys.stdin, 'fasta'))
     sys.stdout.write('\n'.join([str(r.seq) for r in recs])+'\n')
 
-def gb_write(name, description):
-    pass
+def write_seqs(seqs,name, description,
+               fmt = 'genbank'):
+    #GUESS SEQUENCE TYPE USING THE SAME METHOD AS MUSCLE:
+    ntcount = sum([seqs[0].upper().count(s) for s in 'GTCAU'])
+    aacount = sum([seqs[0].upper().count(s) for s in  'ACDEFGHIKLMNPQRSTVWYU'])
+    ucount = sum([seqs[0].upper().count(s) for s in  'U'])
 
-def fa_write(name, description):
-    
-    seqs = sys.stdin.read().strip().split('\n')
-    recs = [ srec.SeqRecord(Seq.Seq(seq), id = name + '_'+str(idx),
+    if aacount > ntcount: alphabet = Seq.Alphabet.ProteinAlphabet()
+    else:
+        if ucount != 0:
+            alphabet = Seq.Alphabet.RNAAlphabet()
+        else:
+            alphabet = Seq.Alphabet.DNAAlphabet()
+
+    recs = [ srec.SeqRecord(Seq.Seq(seq,alphabet), id = name + '_'+str(idx),
                             description = description + '_' +str(idx)) 
              for idx, seq in enumerate(seqs) ]
-    sio.write(recs, sys.stdout, 'fasta')
+    sio.write(recs, sys.stdout, fmt)
+
+def cv_prot(seqs, name, description,
+            fmt = 'genbank'):
+    ucount = sum([seqs[0].upper().count(s) for s in  'U'])
+    aprot = Seq.Alphabet.ProteinAlphabet()
+    if ucount != 0:
+        ant = Seq.Alphabet.RNAAlphabet()
+    else:
+        ant = Seq.Alphabet.DNAAlphabet()
+        
+    inp_recs = [ srec.SeqRecord(Seq.Seq(seq,ant), id = name + '_'+str(idx),
+                            description = description + '_' +str(idx)) 
+             for idx, seq in enumerate(seqs) ]
+
+    out_recs = [srec.SeqRecord(seq.seq.translate(), id = name + '_'+str(idx),
+                            description = description + '_' +str(idx)) 
+             for idx, seq in enumerate(inp_recs) ]
+    sio.write(out_recs, sys.stdout, fmt)
 
 
 def usage():
@@ -34,6 +61,10 @@ func_name:
   faw: fa_read                 Same as gbw.
   far: fa_write [id] [descr] Same as gbr.
 
+  fap: cv_prot (fasta)   Writes nucleotide sequence to an amino acid fasta file
+  gap: cv_prot (genbank) Writes nucleotide sequence to an amino acid gb file
+  
+
 '''
     return 0
   
@@ -44,16 +75,24 @@ if __name__ == '__main__':
     
     if prog == 'gbr':
         gb_read()
-    elif prog == 'gbw':
+    elif prog in [ 'gbw', 'faw' ]:
+        
         if len(args) < 2: exit(usage())
         if len(args) < 3: args.append('undescribed')
+        fmt = 'genbank' if prog == 'gbw' else 'fasta'
+        seqs = sys.stdin.read().strip().split('\n')
         name, description = args[1:]
-        gb_write(name, description)
-    elif prog == 'faw':
+        write_seqs(seqs, name, description, fmt = fmt)
+
+    elif prog in [ 'fap', 'gbp' ]:
+        
         if len(args) < 2: exit(usage())
         if len(args) < 3: args.append('undescribed')
+        fmt = 'genbank' if prog == 'gbw' else 'fasta'
+        seqs = sys.stdin.read().strip().split('\n')
         name, description = args[1:]
-        fa_write(name, description)
+        cv_prot(seqs, name, description, fmt = fmt)
+
     elif prog == 'far':
         fa_read()
 
