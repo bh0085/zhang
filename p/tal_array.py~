@@ -1,0 +1,15 @@
+#!/usr/bin/env python
+'''
+Package of programs for my TAL characterization array and 
+for the mismatch tolerance analysis that will lead up to it.
+
+'''
+
+reporters = {'T8':'TACCANTNANTATA',
+                 'T4':'TAAGANTNANTATA',
+                 'T5':'TATGANTNANTATA',
+                 'T6':'TAGGANTNANTATA'}
+ids = {'T8':'C','T4':'A','T5':'T','T6':'G'}
+nts = list('ATGC')
+    
+def mismatch_reporters():
