@@ -6,6 +6,7 @@ for the mismatch tolerance analysis that will lead up to it.
 '''
 
 import re
+import utils as zutils
 
 reporters = {'T8':'TACCANTNANTATA',
              'T4':'TAAGANTNANTATA',
@@ -18,8 +19,6 @@ complement = {'G':'C',
               'T':'A',
               'C':'G'}
 
-def reverse_complement(seq):
-    return [complement[s] for s in seq[::-1]]
 
 def mismatch_reporters():
     enzymes = {'fwd': ['CTAGA', 'G'],
@@ -37,7 +36,7 @@ def mismatch_reporters():
                 fwd = list(enzymes['fwd'])
                 fwd.insert(1,rep)
                 rev = list(enzymes['rev'])
-                rev.insert(1,''.join(reverse_complement(rep)))
+                rev.insert(1,''.join(zutils.reverse_complement(rep)))
 
                 names.append('{0}_{1}mm={2}_rev'.format(k, m_ct, mm))
                 primers.append(''.join(rev))
