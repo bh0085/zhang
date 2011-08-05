@@ -150,8 +150,9 @@ primers with six nucleotides appended'''
 
     #NOW READ ALL OF THE FILES AT ONCE AND PRINT
     primers = readfiles(files)  
+
     sw('printing primers:\n')
-    sw('\n'.join(sorted(['>{0}\t{1}'.format(*p) for p in bsai_print_final(primers)])))
+    sw('\n'.join(sorted(['{0}; {1}; '.format(*p) for p in bsai_print_final(primers)])))
       
       
 
