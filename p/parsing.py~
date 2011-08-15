@@ -1,0 +1,10 @@
+def parse_gbfile(fpath = '/Users/bh0085/zhang/genbank/pCMV-Syn_N1_G1-10_NRX_MBD_(from ccdb).gbk'):
+
+    fdata = open(fpath).readlines()
+    
+    
+    ioelt = StringIO.StringIO(\
+        '\n'.join([l 
+                   if ( not re.search(re.compile('^\s+\d+'),l)) or i < o_elt 
+                   else l[2:] 
+                   for i,l in enumerate(fdata.splitlines())]))
