@@ -1,0 +1,784 @@
+LOCUS       mTET1_TALEN_Design_Le for Ben       5200 bp    DNA     linear       02-SEP-2011
+FEATURES             Location/Qualifiers
+     repeat_region   complement(329..523)
+                     /note="B3 repeat: matches 14..213(1) of consensus"
+     repeat_region   complement(184..320)
+                     /note="B1_Mus1 repeat: matches 6..143(1) of consensus"
+     repeat_region   complement(157..186)
+                     /note="dust repeat: matches 62343577..62343606(1) of
+                     consensus"
+     repeat_region   complement(772..792)
+                     /note="dust repeat: matches 62342971..62342991(1) of
+                     consensus"
+     repeat_region   complement(772..792)
+                     /note="trf repeat: matches 1..21(1) of consensus"
+     repeat_region   741..775
+                     /note="B1_Mm repeat: matches 113..147(1) of consensus"
+     repeat_region   complement(540..719)
+                     /note="B1_Mus1 repeat: matches 1..143(1) of consensus"
+     repeat_region   complement(539..634)
+                     /note="ID_B1 repeat: matches 124..220(1) of consensus"
+     misc_feature    916..935
+                     /note="TALEN_TET1_R2"
+     misc_feature    906..925
+                     /note="TALEN_TET1_R1"
+     misc_feature    879..898
+                     /note="TALEN_TET1_L1"
+     misc_feature    891..910
+                     /note="TALEN_TET1_L2"
+     misc_feature    956..975
+                     /note="TALEN_TET1_L4"
+     misc_feature    977..996
+                     /note="TALEN_TET1_R3"
+     misc_feature    994..1013
+                     /note="TALEN_TET1_R4"
+     misc_feature    942..961
+                     /note="TALEN_TET1_L3"
+     exon            1001..2863
+                     /note="exon_id=ENSMUSE00000883622"
+     exon            1001..2863
+                     /note="exon_id=NM_027384.1.1"
+     exon            1001..2863
+                     /note="exon_id="
+     variation       1441..1441
+                     /replace="A/G"
+                     /db_xref="dbSNP:rs46668308"
+     misc_feature    1001..2863
+                     /note="match: D0VLQ4.1 : 1..621(1)"
+     misc_feature    1001..2863
+                     /note="match: Q3URK3.2 : 1..621(1)"
+     misc_feature    1001..2863
+                     /note="match: Q3URK3 : 1..621(1)"
+     misc_feature    1001..2842
+                     /note="match: Q8NFU7.2 : 1..631(1)"
+     misc_feature    1001..2842
+                     /note="match: D2GXI8.1 : 1..626(1)"
+     misc_feature    1001..2863
+                     /note="match: GU079948.1 : 1..1863(1)"
+     misc_feature    1001..2863
+                     /note="match: Mm.479241 : 1..1863(1)"
+     misc_feature    1001..2863
+                     /note="match: GU079948.1 : 1..1863(1)"
+     misc_feature    1001..2863
+                     /note="match: NM_027384.1 : 1..1863(1)"
+     misc_feature    1304..2842
+                     /note="match: Ssc.43343 : 322..1893(1)"
+     misc_feature    1001..2842
+                     /note="match: AF430147.1 : 210..2102(1)"
+     misc_feature    1001..2842
+                     /note="match: Mmu.9448 : 368..2260(1)"
+     misc_feature    1001..2842
+                     /note="match: Hs.567594 : 506..2398(1)"
+     misc_feature    1001..2842
+                     /note="match: Cfa.39699 : 1..1884(1)"
+     misc_feature    1001..2839
+                     /note="match: Ssc.43343 : 1..1866(1)"
+     misc_feature    1001..2701
+                     /note="match: Cpi.9008 : 601..2358(1)"
+     misc_feature    1010..1963
+                     /note="match: Gga.29157 : 22..984(1)"
+     misc_feature    1001..1882
+                     /note="match: Y16563.1 : 1863..2741(1)"
+     misc_feature    1364..1813
+                     /note="match: Gga.29157 : 613..1083(1)"
+     misc_feature    1004..1480
+                     /note="match: Spu.26063 : 791..1234(1)"
+     misc_feature    1298..1447
+                     /note="match: CU075367.1 : 359..499(1)"
+     misc_feature    1298..1447
+                     /note="match: Str.55683 : 359..499(1)"
+     misc_feature    1286..1396
+                     /note="match: Xl.81997 : 377..481(1)"
+     misc_feature    1136..1252
+                     /note="match: AK145484.1 : 2095..2211(1)"
+     misc_feature    1004..1048
+                     /note="match: Hs.567594 : 224..265(1)"
+     misc_feature    1001..1033
+                     /note="match: AK145484.1 : 1051..1077(1)"
+     misc_feature    1001..1018
+                     /note="match: BC083622.1 : 363..380(1)"
+     misc_feature    1001..1018
+                     /note="match: Rn.105695 : 363..380(1)"
+     variation       1586..1586
+                     /replace="T/G"
+                     /db_xref="dbSNP:rs51250138"
+     misc_feature    1712..1831
+                     /note="match: Cfa.46192 : 344..463(1)"
+     misc_feature    1541..1621
+                     /note="match: Gga.29157 : 1027..1101(1)"
+     variation       2472..2472
+                     /replace="A/G"
+                     /db_xref="dbSNP:rs46821902"
+     variation       2188..2188
+                     /replace="G/A"
+                     /db_xref="dbSNP:rs48236908"
+     variation       2146..2146
+                     /replace="A/G"
+                     /db_xref="dbSNP:rs50947134"
+     misc_feature    2462..2842
+                     /note="match: Q4T499.1 : 617..741(1)"
+     misc_feature    2357..2842
+                     /note="match: Gga.29157 : 1390..1893(1)"
+     misc_feature    2267..2839
+                     /note="match: Cin.29020 : 462..1049(1)"
+     misc_feature    2228..2698
+                     /note="match: Y16563.1 : 4227..4712(1)"
+     misc_feature    2072..2323
+                     /note="match: AK001782.1 : 190..438(1)"
+     misc_feature    2255..2311
+                     /note="match: AK132950.1 : 194..247(1)"
+     misc_feature    2255..2311
+                     /note="match: BC089314.1 : 270..323(1)"
+     misc_feature    2255..2311
+                     /note="match: AK005364.1 : 299..352(1)"
+     misc_feature    2255..2311
+                     /note="match: AK015150.1 : 174..227(1)"
+     misc_feature    2255..2311
+                     /note="match: Mm.94560 : 270..323(1)"
+     misc_feature    2066..2311
+                     /note="match: Cfa.46192 : 3..236(1)"
+     misc_feature    2072..2149
+                     /note="match: BC017439.1 : 559..630(1)"
+     misc_feature    2072..2149
+                     /note="match: CR611313.1 : 594..665(1)"
+     misc_feature    2072..2149
+                     /note="match: BC002490.2 : 3..74(1)"
+     misc_feature    2072..2149
+                     /note="match: BC006428.1 : 598..669(1)"
+     misc_feature    2072..2149
+                     /note="match: AB097005.1 : 244..315(1)"
+     misc_feature    2072..2149
+                     /note="match: CR614582.1 : 593..664(1)"
+     misc_feature    2072..2149
+                     /note="match: BC041013.1 : 588..659(1)"
+     misc_feature    2072..2149
+                     /note="match: AB097032.1 : 244..315(1)"
+     misc_feature    2072..2149
+                     /note="match: AK024338.1 : 667..738(1)"
+     misc_feature    2072..2149
+                     /note="match: BC024040.1 : 588..659(1)"
+     misc_feature    2072..2149
+                     /note="match: Hs.189119 : 598..669(1)"
+     exon            2842..2863
+                     /note="exon_id=ENSMUSESTE00000229437"
+     variation       2719..2719
+                     /replace="G/C"
+                     /db_xref="dbSNP:rs50592205"
+     misc_feature    2816..2863
+                     /note="match: Cin.29020 : 1027..1074(1)"
+     misc_feature    2774..2863
+                     /note="match: CR697700.2 : 1005..1094(1)"
+     misc_feature    2702..2863
+                     /note="match: AB173005.1 : 1240..1401(1)"
+     misc_feature    2702..2863
+                     /note="match: BC017439.1 : 1375..1536(1)"
+     misc_feature    2702..2863
+                     /note="match: CR611313.1 : 1410..1571(1)"
+     misc_feature    2702..2863
+                     /note="match: BC016207.1 : 769..930(1)"
+     misc_feature    2702..2863
+                     /note="match: CU075367.1 : 1127..1288(1)"
+     misc_feature    2702..2863
+                     /note="match: BC083622.1 : 887..1048(1)"
+     misc_feature    2702..2863
+                     /note="match: BC002490.2 : 819..980(1)"
+     misc_feature    2702..2863
+                     /note="match: BC006428.1 : 1414..1575(1)"
+     misc_feature    2702..2863
+                     /note="match: CR726864.1 : 946..1107(1)"
+     misc_feature    2702..2863
+                     /note="match: AB097005.1 : 1060..1221(1)"
+     misc_feature    2702..2863
+                     /note="match: CR614582.1 : 1409..1570(1)"
+     misc_feature    2702..2863
+                     /note="match: AK132950.1 : 1002..1163(1)"
+     misc_feature    2702..2863
+                     /note="match: BC041013.1 : 1404..1565(1)"
+     misc_feature    2702..2863
+                     /note="match: AB097032.1 : 1060..1221(1)"
+     misc_feature    2702..2863
+                     /note="match: BC089314.1 : 1078..1239(1)"
+     misc_feature    2702..2863
+                     /note="match: AK005364.1 : 1106..1267(1)"
+     misc_feature    2702..2863
+                     /note="match: AK001782.1 : 1005..1166(1)"
+     misc_feature    2702..2863
+                     /note="match: AK024338.1 : 1483..1644(1)"
+     misc_feature    2702..2863
+                     /note="match: BC109662.1 : 979..1140(1)"
+     misc_feature    2702..2863
+                     /note="match: BC024040.1 : 1404..1565(1)"
+     misc_feature    2702..2863
+                     /note="match: AK015150.1 : 981..1142(1)"
+     misc_feature    2702..2863
+                     /note="match: CR725936.2 : 964..1125(1)"
+     misc_feature    2702..2863
+                     /note="match: CR684556.1 : 943..1104(1)"
+     misc_feature    2702..2863
+                     /note="match: Mm.94560 : 1078..1239(1)"
+     misc_feature    2702..2863
+                     /note="match: Dr.18724 : 1287..1448(1)"
+     misc_feature    2702..2863
+                     /note="match: Bt.9593 : 955..1116(1)"
+     misc_feature    2702..2863
+                     /note="match: Pan.401 : 90..251(1)"
+     misc_feature    2702..2863
+                     /note="match: Mmu.14020 : 1113..1274(1)"
+     misc_feature    2702..2863
+                     /note="match: Rn.105695 : 887..1048(1)"
+     misc_feature    2702..2863
+                     /note="match: Cfa.46192 : 991..1152(1)"
+     misc_feature    2702..2863
+                     /note="match: Str.55683 : 1127..1288(1)"
+     misc_feature    2702..2863
+                     /note="match: Hs.189119 : 1414..1575(1)"
+     misc_feature    2702..2863
+                     /note="match: Pab.11576 : 975..1136(1)"
+     misc_feature    2702..2863
+                     /note="match: Mfa.8022 : 1240..1401(1)"
+     misc_feature    2702..2863
+                     /note="match: Ssc.9048 : 229..390(-1)"
+     misc_feature    2702..2863
+                     /note="match: Ame.4658 : 988..1146(1)"
+     misc_feature    2702..2863
+                     /note="match: Eca.6388 : 1490..1651(1)"
+     misc_feature    2699..2863
+                     /note="match: Spu.26063 : 2009..2182(1)"
+     misc_feature    2654..2863
+                     /note="match: Spu.18109 : 1870..2085(1)"
+     misc_feature    2579..2863
+                     /note="match: AK145484.1 : 2907..3209(1)"
+     misc_feature    2573..2863
+                     /note="match: Omy.27665 : 892..1161(1)"
+     misc_feature    2678..2857
+                     /note="match: Ppr.26619 : 190..369(1)"
+     misc_feature    2597..2842
+                     /note="match: BC065149.1 : 1004..1252(1)"
+     misc_feature    2597..2842
+                     /note="match: BC082332.1 : 535..783(1)"
+     misc_feature    2597..2842
+                     /note="match: Cfa.44410 : 157..405(1)"
+     misc_feature    2597..2842
+                     /note="match: Mm.457442 : 535..783(1)"
+     misc_feature    2597..2842
+                     /note="match: Mm.224814 : 1004..1252(1)"
+     misc_feature    2705..2839
+                     /note="match: Xl.81997 : 603..737(1)"
+     misc_feature    2513..2839
+                     /note="match: Dm.23963 : 1603..1908(1)"
+     misc_feature    2762..2824
+                     /note="match: Gga.29157 : 4539..4601(1)"
+     misc_feature    2702..2770
+                     /note="match: CR697700.2 : 934..1002(1)"
+     misc_feature    2549..2737
+                     /note="match: BC017439.1 : 625..810(1)"
+     misc_feature    2549..2737
+                     /note="match: CR611313.1 : 660..845(1)"
+     misc_feature    2549..2737
+                     /note="match: BC002490.2 : 69..254(1)"
+     misc_feature    2549..2737
+                     /note="match: BC006428.1 : 664..849(1)"
+     misc_feature    2549..2737
+                     /note="match: AB097005.1 : 310..495(1)"
+     misc_feature    2549..2737
+                     /note="match: CR614582.1 : 659..844(1)"
+     misc_feature    2549..2737
+                     /note="match: BC041013.1 : 654..839(1)"
+     misc_feature    2549..2737
+                     /note="match: AB097032.1 : 310..495(1)"
+     misc_feature    2549..2737
+                     /note="match: AK024338.1 : 733..918(1)"
+     misc_feature    2549..2737
+                     /note="match: BC024040.1 : 654..839(1)"
+     misc_feature    2549..2737
+                     /note="match: Hs.189119 : 664..849(1)"
+     misc_feature    2549..2737
+                     /note="match: Pab.11576 : 225..410(1)"
+     repeat_region   complement(2955..3026)
+                     /note="ID4_ repeat: matches 5..74(1) of consensus"
+     repeat_region   complement(2946..3006)
+                     /note="tRNA-Ala-GCY_ repeat: matches 17..75(1) of
+                     consensus"
+     repeat_region   3377..3433
+                     /note="PB1D10 repeat: matches 37..95(1) of consensus"
+     repeat_region   3235..3371
+                     /note="RSINE1 repeat: matches 3..146(1) of consensus"
+     repeat_region   complement(3214..3221)
+                     /note="dust repeat: matches 62340542..62340549(1) of
+                     consensus"
+     variation       3516..3516
+                     /replace="G/T"
+                     /db_xref="dbSNP:rs48494739"
+     repeat_region   complement(3940..4115)
+                     /note="B2_Mm2 repeat: matches 1..193(1) of consensus"
+     repeat_region   complement(3940..3952)
+                     /note="dust repeat: matches 62339811..62339823(1) of
+                     consensus"
+     repeat_region   complement(3792..3939)
+                     /note="B1_Mus1 repeat: matches 1..148(1) of consensus"
+     repeat_region   complement(3768..3804)
+                     /note="dust repeat: matches 62339959..62339995(1) of
+                     consensus"
+     repeat_region   3643..3742
+                     /note="PB1D7 repeat: matches 20..120(1) of consensus"
+     variation       4408..4408
+                     /replace="A/G"
+                     /db_xref="dbSNP:rs51266540"
+     variation       4381..4381
+                     /replace="C/T"
+                     /db_xref="dbSNP:rs48198993"
+     repeat_region   complement(4256..4306)
+                     /note="RLTR20C2_MM repeat: matches 352..403(1) of
+                     consensus"
+     repeat_region   complement(4248..4299)
+                     /note="dust repeat: matches 62339464..62339515(1) of
+                     consensus"
+     repeat_region   complement(4248..4299)
+                     /note="trf repeat: matches 1..52(1) of consensus"
+     repeat_region   complement(4128..4234)
+                     /note="PB1D7 repeat: matches 3..115(1) of consensus"
+     repeat_region   complement(4126..4133)
+                     /note="dust repeat: matches 62339630..62339637(1) of
+                     consensus"
+     variation       4577..4577
+                     /replace="A/G"
+                     /db_xref="dbSNP:rs49753733"
+     repeat_region   4987..5117
+                     /note="B1_Mur2 repeat: matches 5..143(1) of consensus"
+     repeat_region   complement(4860..4916)
+                     /note="dust repeat: matches 62338847..62338903(1) of
+                     consensus"
+     repeat_region   complement(4860..4916)
+                     /note="trf repeat: matches 1..57(1) of consensus"
+     repeat_region   complement(4618..4763)
+                     /note="B1_Mur3 repeat: matches 1..149(1) of consensus"
+     repeat_region   complement(4597..4629)
+                     /note="dust repeat: matches 62339134..62339166(1) of
+                     consensus"
+     STS             complement(4636..5076)
+                     /standard_name="240560"
+                     /db_xref="UniSTS_NUM:240560"
+                     /note="map_weight=2"
+     variation       5185..5185
+                     /replace="T/C"
+                     /db_xref="dbSNP:rs50552949"
+     repeat_region   complement(5112..5157)
+                     /note="dust repeat: matches 62338606..62338651(1) of
+                     consensus"
+     source          join(1..1,1..5198)
+                     /dnas_title="Mus musculus"
+                     /organism="Mus musculus"
+                     /db_xref="taxon:10090"
+     gene            1001..5200
+                     /gene="Tet1"
+                     /note="tet oncogene 1 [Source:MGI Symbol;Acc:MGI:1098693]"
+     mRNA            1001..2863
+                     /dnas_title="ENSMUSG00000047146"
+                     /gene="ENSMUSG00000047146"
+                     /note="transcript_id=ENSMUST00000050826"
+     CDS             1001..2863
+                     /dnas_title="ENSMUSG00000047146"
+                     /gene="ENSMUSG00000047146"
+                     /protein_id="ENSMUSP00000059527"
+                     /note="transcript_id=ENSMUST00000050826"
+                     /db_xref="MGI:Tet1"
+                     /db_xref="CCDS:CCDS48581.1"
+                     /db_xref="Uniprot/SWISSPROT:TET1_MOUSE"
+                     /db_xref="RefSeq_peptide:NP_081660.1"
+                     /db_xref="RefSeq_dna:NM_027384.1"
+                     /db_xref="UCSC:uc007fjf.1"
+                     /db_xref="Fantom:2510010B09"
+                     /db_xref="Fantom:C530015L04"
+                     /db_xref="EMBL:AC166359"
+                     /db_xref="EMBL:AK010953"
+                     /db_xref="EMBL:AK129421"
+                     /db_xref="EMBL:AK141438"
+                     /db_xref="GO:GO:0001826"
+                     /db_xref="GO:GO:0003677"
+                     /db_xref="GO:GO:0005506"
+                     /db_xref="GO:GO:0005506"
+                     /db_xref="GO:GO:0005634"
+                     /db_xref="GO:GO:0008270"
+                     /db_xref="GO:GO:0016491"
+                     /db_xref="GO:GO:0016702"
+                     /db_xref="GO:GO:0019827"
+                     /db_xref="GO:GO:0043566"
+                     /db_xref="GO:GO:0043566"
+                     /db_xref="GO:GO:0046872"
+                     /db_xref="GO:GO:0070579"
+                     /db_xref="GO:GO:0070579"
+                     /db_xref="GO:GO:0080111"
+                     /db_xref="IPI:IPI00551511.3"
+                     /db_xref="MGI_transcript_name:Tet1-201"
+                     /db_xref="goslim_goa:GO:0005575"
+                     /db_xref="goslim_goa:GO:0005622"
+                     /db_xref="goslim_goa:GO:0005623"
+                     /db_xref="goslim_goa:GO:0005634"
+                     /db_xref="goslim_goa:GO:0006259"
+                     /db_xref="goslim_goa:GO:0009790"
+                     /db_xref="goslim_goa:GO:0030154"
+                     /db_xref="goslim_goa:GO:0034641"
+                     /db_xref="goslim_goa:GO:0043226"
+                     /db_xref="goslim_goa:GO:0044281"
+                     /db_xref="goslim_goa:GO:0048646"
+                     /db_xref="goslim_goa:GO:0048856"
+                     /db_xref="protein_id:BAB27288.1"
+                     /db_xref="protein_id:BAC98231.1"
+                     /db_xref="protein_id:BAE24685.1"
+                     /translation="MSRSRPAKPSKSVKTKLQKKKDIQMKTKTSKQAVRHGASAKAVN
+                     PGKPKQLIKRRDGKKETEDKTPTPAPSFLTRAGAARMNRDRNQVLFQNPDSLTCNGFT
+                     MALRRTSLSWRLSQRPVVTPKPKKVPPSKKQCTHNIQDEPGVKHSENDSVPSQHATVS
+                     PGTENGEQNRCLVEGESQEITQSCPVFEERIEDTQSCISASGNLEAEISWPLEGTHCE
+                     ELLSHQTSDNECTSPQECAPLPQRSTSEVTSQKNTSNQLADLSSQVESIKLSDPSPNP
+                     TGSDHNGFPDSSFRIVPELDLKTCMPLDESVYPTALIRFILAGSQPDVFDTKPQEKTL
+                     ITTPEQVGSHPNQVLDATSVLGQAFSTLPLQWGFSGANLVQVEALGKGSDSPEDLGAI
+                     TMLNQQETVAMDMDRNATPDLPIFLPKPPNTVATYSSPLLGPEPHSSTSCGLEVQGAT
+                     PILTLDSGHTPQLPPNPESSSVPLVIAANGTRAEKQFGTSLFPAVPQGFTVAAENEVQ
+                     HAPLDLTQGSQAAPSKLEGEISRVSITGSADVKATAMSMPVTQASTSSPPCNSTPPMV
+                     ERRKRKACGVCEPCQQKANCGECTYCKNRKNSHQICKKRKCEVLKKKPEATSQAQVTK
+                     ENKRPQREKKPKVLKTDFNNKPVNGPKSESMDCSRRGHGEEEQRLDLITHPLENVRKN
+                     AGGMTGIEVEKWAPNKKSHLAEGQVKGSCDANLTGVENPQPSEDDKQQTNPSPTFAQT
+                     IRNGMKNVHCLPTDTHLPLNKLNHEEFSKALGNNSSKLLTDPSNCKDAMSVTTSGGEC
+                     DHLKGPRNTLLFQKPGLNCRSGAEPTIFNNHPNTHSAGSRPHPPEKVPNKEPKDGSPV
+                     QPSLLSLMKDRRLTLEQVVAIEALTQLSEAPSESSSPSKPEKDEEAHQKTASLLNSCK
+                     AILHSVRKDLQDPNVQGKGLHHDTVVFNGQNRTFKSPDSFATNQALIKSQGYPSSPTA
+                     EKKGAAGGRAPFDGFENSHPLPIESHNLENCSQVLSCDQNLSSHDPSCQDAPYSQIEE
+                     DVAAQLTQLASTINHINAEVRNAESTPESLVAKNTKQKHSQEKRMVHQKPPSSTQTKP
+                     SVPSAKPKKAQKKARATPHANKRKKKPPARSSQENDQKKQEQLAIEYSKMHDIWMSSK
+                     FQRFGQSSPRSFPVLLRNIPVFNQILKPVTQSKTPSQHNELFPPINQIKFTRNPELAK
+                     EKVKVEPSDSLPTCQFKTESGGQTFAEPADNSQGQPMVSVNQEAHPLPQSPPSNQCAN
+                     IMAGAAQTQFHLGAQENLVHQIPPPTLPGTSPDTLLPDPASILRKGKVLHFDGITVVT
+                     EKREAQTSSNGPLGPTTDSAQSEFKESIMDLLSKPAKNLIAGLKEQEAAPCDCDGGTQ
+                     KEKGPYYTHLGAGPSVAAVRELMETRFGQKGKAIRIEKIVFTGKEGKSSQGCPVAKWV
+                     IRRSGPEEKLICLVRERVDHHCSTAVIVVLILLWEGIPRLMADRLYKELTENLRSYSG
+                     HPTDRRCTLNKKRTCTCQGIDPKTCGASFSFGCSWSMYFNGCKFGRSENPRKFRLAPN
+                     YPLHEKQLEKNLQELATVLAPLYKQMAPVAYQNQVEYEEVAGDCRLGNEEGRPFSGVT
+                     CCMDFCAHSHKDIHNMHNGSTVVCTLIRADGRDTNCPEDEQLHVLPLYRLADTDEFGS
+                     VEGMKAKIKSGAIQVNGPTRKRRLRFTEPVPRCGKRAKMKQNHNKSGSHNTKSFSSAS
+                     STSHLVKDESTDFCPLQASSAETSTCTYSKTASGGFAETSSILHCTMPSGAHSGANAA
+                     AGECTGTVQPAEVAAHPHQSLPTADSPVHAEPLTSPSEQLTSNQSNQQLPLLSNSQKL
+                     ASCQVEDERHPEADEPQHPEDDNLPQLDEFWSDSEEIYADPSFGGVAIAPIHGSVLIE
+                     CARKELHATTSLRSPKRGVPFRVSLVFYQHKSLNKPNHGFDINKIKCKCKKVTKKKPA
+                     DRECPDVSPEANLSHQIPSRVASTLTRDNVVTVSPYSLTHVAGPYNRWV"
+     mRNA            1001..2863
+                     /dnas_title="ENSMUSG00000047146"
+                     /gene="ENSMUSG00000047146"
+                     /note="transcript_id=ENSMUST00000099675"
+     CDS             1001..2863
+                     /dnas_title="ENSMUSG00000047146"
+                     /gene="ENSMUSG00000047146"
+                     /protein_id="ENSMUSP00000097267"
+                     /note="transcript_id=ENSMUST00000099675"
+                     /db_xref="Uniprot/SPTREMBL:E9Q9Y4_MOUSE"
+                     /db_xref="UCSC:uc007fjf.1"
+                     /db_xref="EMBL:AC166359"
+                     /db_xref="GO:GO:0003677"
+                     /db_xref="GO:GO:0008270"
+                     /db_xref="IPI:IPI00750145.3"
+                     /db_xref="MGI_transcript_name:Tet1-202"
+                     /translation="MSRSRPAKPSKSVKTKLQKKKDIQMKTKTSKQAVRHGASAKAVN
+                     PGKPKQLIKRRDGKKETEDKTPTPAPSFLTRAGAARMNRDRNQVLFQNPDSLTCNGFT
+                     MALRRTSLSWRLSQRPVVTPKPKKVPPSKKQCTHNIQDEPGVKHSENDSVPSQHATVS
+                     PGTENGEQNRCLVEGESQEITQSCPVFEERIEDTQSCISASGNLEAEISWPLEGTHCE
+                     ELLSHQTSDNECTSPQECAPLPQRSTSEVTSQKNTSNQLADLSSQVESIKLSDPSPNP
+                     TGSDHNGFPDSSFRIVPELDLKTCMPLDESVYPTALIRFILAGSQPDVFDTKPQEKTL
+                     ITTPEQVGSHPNQVLDATSVLGQAFSTLPLQWGFSGANLVQVEALGKGSDSPEDLGAI
+                     TMLNQQETVAMDMDRNATPDLPIFLPKPPNTVATYSSPLLGPEPHSSTSCGLEVQGAT
+                     PILTLDSGHTPQLPPNPESSSVPLVIAANGTRAEKQFGTSLFPAVPQGFTVAAENEVQ
+                     HAPLDLTQGSQAAPSKLEGEISRVSITGSADVKATAMSMPVTQASTSSPPCNSTPPMV
+                     ERRKRKACGVCEPCQQKANCGECTYCKNRKNSHQICKKRKCEVLKKKPEATSQAQVTK
+                     ENKRPQREKKPKVLKTDFNNKPVNGPKSESMDCSRRGHGEEEQRLDLITHPLENVRKN
+                     AGGMTGIEVEKWAPNKKSHLAEGQVKGSCDANLTGVENPQPSEDDKQQTNPSPTFAQT
+                     IRNGMKNVHCLPTDTHLPLNKLNHEEFSKALGNNSSKLLTDPSNCKDAMSVTTSGGEC
+                     DHLKGPRNTLLFQKPGLNCRSGAEPTIFNNHPNTHSAGSRPHPPEKVPNKEPKDGSPV
+                     QPSLLSLMKDRRLTLEQVVAIEALTQLSEAPSESSSPSKPEKDEEAHQKTASLLNSCK
+                     AILHSVRKDLQDPNVQGKGLHHDTVVFNGQNRTFKSPDSFATNQALIKSQGYPSSPTA
+                     EKKGAAGGRAPFDGFENSHPLPIESHNLENCSQVLSCDQNLSSHDPSCQDAPYSQIEE
+                     DVAAQLTQLASTINHINAEVRNAESTPESLVAKNTKQKHSQEKRMVHQKPPSSTQTKP
+                     SVPSAKPKKAQKKARATPHANKRKKKPPARSSQENDQKKQEQLAIEYSKMHDIWMSSK
+                     FQRFGQSSPRSFPVLLRNIPVFNQILKPVTQSKTPSQHNELFPPINQIKFTRNPELAK
+                     EKVKVEPSDSLPTCQFKTESGGQTFAEPADNSQGQPMVSVNQEAHPLPQSPPSNQCAN
+                     IMAGAAQTQFHLGAQENLVHQIPPPTLPGTSPDTLLPDPASILRKGKVLHFDGITVVT
+                     EKREAQTSSNGPLGPTTDSAQSEFKESIMDLLSKPAKNLIAGLKEQEAAPCDCDGGTQ
+                     KEKGPYYTHLGAGPSVAAVRELMETRFGQKGKAIRIEKIVFTGKEGKSSQGCPVAKWV
+                     IRRSGPEEKLICLVRERVDHHCSTAVIVVLILLWEGIPRLMADRLYKELTENLRSYSG
+                     HPTDRRCTLNKKRTCTCQGIDPKTCGASFSFGCSWSMYFNGCKFGRSENPRKFRLAPN
+                     YPLHNYYKRITGMSSEGSDVKTGWIIPDRKTLISREEKQLEKNLQELATVLAPLYKQM
+                     APVAYQNQVEYEEVAGDCRLGNEEGRPFSGVTCCMDFCAHSHKDIHNMHNGSTVVCTL
+                     IRADGRDTNCPEDEQLHVLPLYRLADTDEFGSVEGMKAKIKSGAIQVNGPTRKRRLRF
+                     TEPVPRCGKRAKMKQNHNKSGSHNTKSFSSASSTSHLVKDESTDFCPLQASSAETSTC
+                     TYSKTASGGFAETSSILHCTMPSGAHSGANAAAGECTGTVQPAEVAAHPHQSLPTADS
+                     PVHAEPLTSPSEQLTSNQSNQQLPLLSNSQKLASCQVEDERHPEADEPQHPEDDNLPQ
+                     LDEFWSDSEEIYADPSFGGVAIAPIHGSVLIECARKELHATTSLRSPKRGVPFRVSLV
+                     FYQHKSLNKPNHGFDINKIKCKCKKVTKKKPADRECPDVSPEANLSHQIPSRVASTLT
+                     RDNVVTVSPYSLTHVAGPYNRWV"
+     gene            1001..5200
+                     /gene="52463"
+                     /note="transcript_id=NM_027384.1"
+     CDS             1001..2863
+                     /dnas_title="52463"
+                     /gene="52463"
+                     /protein_id="NP_081660.1"
+                     /note="transcript_id=NM_027384.1"
+                     /translation="MSRSRPAKPSKSVKTKLQKKKDIQMKTKTSKQAVRHGASAKAVN
+                     PGKPKQLIKRRDGKKETEDKTPTPAPSFLTRAGAARMNRDRNQVLFQNPDSLTCNGFT
+                     MALRRTSLSWRLSQRPVVTPKPKKVPPSKKQCTHNIQDEPGVKHSENDSVPSQHATVS
+                     PGTENGEQNRCLVEGESQEITQSCPVFEERIEDTQSCISASGNLEAEISWPLEGTHCE
+                     ELLSHQTSDNECTSPQECAPLPQRSTSEVTSQKNTSNQLADLSSQVESIKLSDPSPNP
+                     TGSDHNGFPDSSFRIVPELDLKTCMPLDESVYPTALIRFILAGSQPDVFDTKPQEKTL
+                     ITTPEQVGSHPNQVLDATSVLGQAFSTLPLQWGFSGANLVQVEALGKGSDSPEDLGAI
+                     TMLNQQETVAMDMDRNATPDLPIFLPKPPNTVATYSSPLLGPEPHSSTSCGLEVQGAT
+                     PILTLDSGHTPQLPPNPESSSVPLVIAANGTRAEKQFGTSLFPAVPQGFTVAAENEVQ
+                     HAPLDLTQGSQAAPSKLEGEISRVSITGSADVKATAMSMPVTQASTSSPPCNSTPPMV
+                     ERRKRKACGVCEPCQQKANCGECTYCKNRKNSHQICKKRKCEVLKKKPEATSQAQVTK
+                     ENKRPQREKKPKVLKTDFNNKPVNGPKSESMDCSRRGHGEEEQRLDLITHPLENVRKN
+                     AGGMTGIEVEKWAPNKKSHLAEGQVKGSCDANLTGVENPQPSEDDKQQTNPSPTFAQT
+                     IRNGMKNVHCLPTDTHLPLNKLNHEEFSKALGNNSSKLLTDPSNCKDAMSVTTSGGEC
+                     DHLKGPRNTLLFQKPGLNCRSGAEPTIFNNHPNTHSAGSRPHPPEKVPNKEPKDGSPV
+                     QPSLLSLMKDRRLTLEQVVAIEALTQLSEAPSESSSPSKPEKDEEAHQKTASLLNSCK
+                     AILHSVRKDLQDPNVQGKGLHHDTVVFNGQNRTFKSPDSFATNQALIKSQGYPSSPTA
+                     EKKGAAGGRAPFDGFENSHPLPIESHNLENCSQVLSCDQNLSSHDPSCQDAPYSQIEE
+                     DVAAQLTQLASTINHINAEVRNAESTPESLVAKNTKQKHSQEKRMVHQKPPSSTQTKP
+                     SVPSAKPKKAQKKARATPHANKRKKKPPARSSQENDQKKQEQLAIEYSKMHDIWMSSK
+                     FQRFGQSSPRSFPVLLRNIPVFNQILKPVTQSKTPSQHNELFPPINQIKFTRNPELAK
+                     EKVKVEPSDSLPTCQFKTESGGQTFAEPADNSQGQPMVSVNQEAHPLPQSPPSNQCAN
+                     IMAGAAQTQFHLGAQENLVHQIPPPTLPGTSPDTLLPDPASILRKGKVLHFDGITVVT
+                     EKREAQTSSNGPLGPTTDSAQSEFKESIMDLLSKPAKNLIAGLKEQEAAPCDCDGGTQ
+                     KEKGPYYTHLGAGPSVAAVRELMETRFGQKGKAIRIEKIVFTGKEGKSSQGCPVAKWV
+                     IRRSGPEEKLICLVRERVDHHCSTAVIVVLILLWEGIPRLMADRLYKELTENLRSYSG
+                     HPTDRRCTLNKKRTCTCQGIDPKTCGASFSFGCSWSMYFNGCKFGRSENPRKFRLAPN
+                     YPLHEKQLEKNLQELATVLAPLYKQMAPVAYQNQVEYEEVAGDCRLGNEEGRPFSGVT
+                     CCMDFCAHSHKDIHNMHNGSTVVCTLIRADGRDTNCPEDEQLHVLPLYRLADTDEFGS
+                     VEGMKAKIKSGAIQVNGPTRKRRLRFTEPVPRCGKRAKMKQNHNKSGSHNTKSFSSAS
+                     STSHLVKDESTDFCPLQASSAETSTCTYSKTASGGFAETSSILHCTMPSGAHSGANAA
+                     AGECTGTVQPAEVAAHPHQSLPTADSPVHAEPLTSPSEQLTSNQSNQQLPLLSNSQKL
+                     ASCQVEDERHPEADEPQHPEDDNLPQLDEFWSDSEEIYADPSFGGVAIAPIHGSVLIE
+                     CARKELHATTSLRSPKRGVPFRVSLVFYQHKSLNKPNHGFDINKIKCKCKKVTKKKPA
+                     DRECPDVSPEANLSHQIPSRVASTLTRDNVVTVSPYSLTHVAGPYNRWV"
+     gene            1001..5200
+                     /gene="CCDS48581.1"
+                     /note="transcript_id=CCDS48581.1"
+     CDS             1001..2863
+                     /dnas_title="CCDS48581.1"
+                     /gene="CCDS48581.1"
+                     /protein_id="CCDS48581.1"
+                     /note="transcript_id=CCDS48581.1"
+                     /db_xref="CCDS:CCDS48581.1"
+                     /db_xref="RefSeq_peptide:NP_081660.1"
+                     /db_xref="RefSeq_dna:NM_027384.1"
+                     /db_xref="Ens_Mm_transcript:ENSMUST00000050826"
+                     /db_xref="Ens_Mm_translation:ENSMUSP00000059527"
+                     /translation="MSRSRPAKPSKSVKTKLQKKKDIQMKTKTSKQAVRHGASAKAVN
+                     PGKPKQLIKRRDGKKETEDKTPTPAPSFLTRAGAARMNRDRNQVLFQNPDSLTCNGFT
+                     MALRRTSLSWRLSQRPVVTPKPKKVPPSKKQCTHNIQDEPGVKHSENDSVPSQHATVS
+                     PGTENGEQNRCLVEGESQEITQSCPVFEERIEDTQSCISASGNLEAEISWPLEGTHCE
+                     ELLSHQTSDNECTSPQECAPLPQRSTSEVTSQKNTSNQLADLSSQVESIKLSDPSPNP
+                     TGSDHNGFPDSSFRIVPELDLKTCMPLDESVYPTALIRFILAGSQPDVFDTKPQEKTL
+                     ITTPEQVGSHPNQVLDATSVLGQAFSTLPLQWGFSGANLVQVEALGKGSDSPEDLGAI
+                     TMLNQQETVAMDMDRNATPDLPIFLPKPPNTVATYSSPLLGPEPHSSTSCGLEVQGAT
+                     PILTLDSGHTPQLPPNPESSSVPLVIAANGTRAEKQFGTSLFPAVPQGFTVAAENEVQ
+                     HAPLDLTQGSQAAPSKLEGEISRVSITGSADVKATAMSMPVTQASTSSPPCNSTPPMV
+                     ERRKRKACGVCEPCQQKANCGECTYCKNRKNSHQICKKRKCEVLKKKPEATSQAQVTK
+                     ENKRPQREKKPKVLKTDFNNKPVNGPKSESMDCSRRGHGEEEQRLDLITHPLENVRKN
+                     AGGMTGIEVEKWAPNKKSHLAEGQVKGSCDANLTGVENPQPSEDDKQQTNPSPTFAQT
+                     IRNGMKNVHCLPTDTHLPLNKLNHEEFSKALGNNSSKLLTDPSNCKDAMSVTTSGGEC
+                     DHLKGPRNTLLFQKPGLNCRSGAEPTIFNNHPNTHSAGSRPHPPEKVPNKEPKDGSPV
+                     QPSLLSLMKDRRLTLEQVVAIEALTQLSEAPSESSSPSKPEKDEEAHQKTASLLNSCK
+                     AILHSVRKDLQDPNVQGKGLHHDTVVFNGQNRTFKSPDSFATNQALIKSQGYPSSPTA
+                     EKKGAAGGRAPFDGFENSHPLPIESHNLENCSQVLSCDQNLSSHDPSCQDAPYSQIEE
+                     DVAAQLTQLASTINHINAEVRNAESTPESLVAKNTKQKHSQEKRMVHQKPPSSTQTKP
+                     SVPSAKPKKAQKKARATPHANKRKKKPPARSSQENDQKKQEQLAIEYSKMHDIWMSSK
+                     FQRFGQSSPRSFPVLLRNIPVFNQILKPVTQSKTPSQHNELFPPINQIKFTRNPELAK
+                     EKVKVEPSDSLPTCQFKTESGGQTFAEPADNSQGQPMVSVNQEAHPLPQSPPSNQCAN
+                     IMAGAAQTQFHLGAQENLVHQIPPPTLPGTSPDTLLPDPASILRKGKVLHFDGITVVT
+                     EKREAQTSSNGPLGPTTDSAQSEFKESIMDLLSKPAKNLIAGLKEQEAAPCDCDGGTQ
+                     KEKGPYYTHLGAGPSVAAVRELMETRFGQKGKAIRIEKIVFTGKEGKSSQGCPVAKWV
+                     IRRSGPEEKLICLVRERVDHHCSTAVIVVLILLWEGIPRLMADRLYKELTENLRSYSG
+                     HPTDRRCTLNKKRTCTCQGIDPKTCGASFSFGCSWSMYFNGCKFGRSENPRKFRLAPN
+                     YPLHEKQLEKNLQELATVLAPLYKQMAPVAYQNQVEYEEVAGDCRLGNEEGRPFSGVT
+                     CCMDFCAHSHKDIHNMHNGSTVVCTLIRADGRDTNCPEDEQLHVLPLYRLADTDEFGS
+                     VEGMKAKIKSGAIQVNGPTRKRRLRFTEPVPRCGKRAKMKQNHNKSGSHNTKSFSSAS
+                     STSHLVKDESTDFCPLQASSAETSTCTYSKTASGGFAETSSILHCTMPSGAHSGANAA
+                     AGECTGTVQPAEVAAHPHQSLPTADSPVHAEPLTSPSEQLTSNQSNQQLPLLSNSQKL
+                     ASCQVEDERHPEADEPQHPEDDNLPQLDEFWSDSEEIYADPSFGGVAIAPIHGSVLIE
+                     CARKELHATTSLRSPKRGVPFRVSLVFYQHKSLNKPNHGFDINKIKCKCKKVTKKKPA
+                     DRECPDVSPEANLSHQIPSRVASTLTRDNVVTVSPYSLTHVAGPYNRWV"
+     gene            2842..5200
+                     /gene="ENSMUSESTG00000029445"
+                     /note="transcript_id=ENSMUSESTT00000060279"
+     mRNA            999..2863
+                     /dnas_title="MLSGCVVWVWDGRQLPKKSDNWDNKFLPALGEHPDSEDRTENSGS
+                     SCR
+                     KDSWELSRGESLASRFFLECALPPLSGVVSRSGSSVHTNRGPEAGAKMRSEDPTGAEK
+                     
+                     RGGSAGGISGKPRKEWTGEGSRGVRLRFGKIQLAFCLSLSGTGSSKGCAPATLLEVCT
+                     
+                     GETPLLWGGARADLAGSTRALRSWNTALCNWFVQSRGLYSPLDVLSLPGHVPLPASST
+                     
+                     GTFAEQLPNPGARALTVPDAMSRSRPAKPSKSVKTKLQKKKDIQMKTKTSKQAVRHGA
+                     
+                     SAKAVNPGKPKQLIKRRDGKKETEDKTPTPAPSFLTRAGAARMNRDRNQVLFQNPDSL
+                     
+                     TCNGFTMALRRTSLSWRLSQRPVVTPKPKKVPPSKKQCTHNIQDEPGVKHSENDSVPS
+                     
+                     QHATVSPGTENGEQNRCLVEGESQEITQSCPVFEERIEDTQSCISASGNLEAEISWPL
+                     
+                     EGTHCEELLSHQTSDNECTSPQECAPLPQRSTSEVTSQKNTSNQLADLSSQVESIKLS
+                     
+                     DPSPNPTGSDHNGFPDSSFRIVPELDLKTCMPLDESVYPTALIRFILAGSQPDVFDTK
+                     
+                     PQEKTLITTPEQVGSHPNQVLDATSVLGQAFSTLPLQWGFSGANLVQVEALGKGSDSP
+                     
+                     EDLGAITMLNQQETVAMDMDRNATPDLPIFLPKPPNTVATYSSPLLGPEPHSSTSCGL
+                     
+                     EVQGATPILTLDSGHTPQLPPNPESSSVPLVIAANGTRAEKQFGTSLFPAVPQGFTVA
+                     
+                     AENEVQHAPLDLTQGSQAAPSKLEGEISRVSITGSADVKATAMSMPVTQASTSSPPCN
+                     
+                     STPPMVERRKRKACGVCEPCQQKANCGECTYCKNRKNSHQICKKRKCEVLKKKPEATS
+                     
+                     QAQNVDTGTDWNGKRLPNCEPLCTLILSQWFDTACQCSSYINNSSGWDELRIYLVINF
+                     
+                     ADYSWGSGWLTTKPVCKKPQPGNPVGGLRREAWLQVMILGGEETGPPPPQIQVGVCLL
+                     
+                     KPPVISVAATRSSAENSMSQLVAACVLWRLKVYKKRQARKQVNKLERVHCLEGKETRA
+                      ALRERLSLVKITKSVQRVALRQTQETKSTKYLVTPQTRFSRPKLSARVSDLI"
+                     /product="MLSGCVVWVWDGRQLPKKSDNWDNKFLPALGEHPDSEDRTENSGSSCR
+                     
+                     KDSWELSRGESLASRFFLECALPPLSGVVSRSGSSVHTNRGPEAGAKMRSEDPTGAEK
+                     
+                     RGGSAGGISGKPRKEWTGEGSRGVRLRFGKIQLAFCLSLSGTGSSKGCAPATLLEVCT
+                     
+                     GETPLLWGGARADLAGSTRALRSWNTALCNWFVQSRGLYSPLDVLSLPGHVPLPASST
+                     
+                     GTFAEQLPNPGARALTVPDAMSRSRPAKPSKSVKTKLQKKKDIQMKTKTSKQAVRHGA
+                     
+                     SAKAVNPGKPKQLIKRRDGKKETEDKTPTPAPSFLTRAGAARMNRDRNQVLFQNPDSL
+                     
+                     TCNGFTMALRRTSLSWRLSQRPVVTPKPKKVPPSKKQCTHNIQDEPGVKHSENDSVPS
+                     
+                     QHATVSPGTENGEQNRCLVEGESQEITQSCPVFEERIEDTQSCISASGNLEAEISWPL
+                     
+                     EGTHCEELLSHQTSDNECTSPQECAPLPQRSTSEVTSQKNTSNQLADLSSQVESIKLS
+                     
+                     DPSPNPTGSDHNGFPDSSFRIVPELDLKTCMPLDESVYPTALIRFILAGSQPDVFDTK
+                     
+                     PQEKTLITTPEQVGSHPNQVLDATSVLGQAFSTLPLQWGFSGANLVQVEALGKGSDSP
+                     
+                     EDLGAITMLNQQETVAMDMDRNATPDLPIFLPKPPNTVATYSSPLLGPEPHSSTSCGL
+                     
+                     EVQGATPILTLDSGHTPQLPPNPESSSVPLVIAANGTRAEKQFGTSLFPAVPQGFTVA
+                     
+                     AENEVQHAPLDLTQGSQAAPSKLEGEISRVSITGSADVKATAMSMPVTQASTSSPPCN
+                     
+                     STPPMVERRKRKACGVCEPCQQKANCGECTYCKNRKNSHQICKKRKCEVLKKKPEATS
+                     
+                     QAQNVDTGTDWNGKRLPNCEPLCTLILSQWFDTACQCSSYINNSSGWDELRIYLVINF
+                     
+                     ADYSWGSGWLTTKPVCKKPQPGNPVGGLRREAWLQVMILGGEETGPPPPQIQVGVCLL
+                     
+                     KPPVISVAATRSSAENSMSQLVAACVLWRLKVYKKRQARKQVNKLERVHCLEGKETRA
+                      ALRERLSLVKITKSVQRVALRQTQETKSTKYLVTPQTRFSRPKLSARVSDLI"
+                     /note="identifier=GENSCAN00000013015"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method:genscan"
+     misc_feature    1001..5200
+                     /note="match: Q3URK3 : 1..2007(1)"
+     misc_feature    1001..5200
+                     /note="match: NM_027384.1 : 1..13986(1)"
+     misc_feature    1001..5200
+                     /note="match: GU079948.1 : 1..6120(1)"
+     misc_feature    1028..1047
+                     /note="TALEN_TET1_L5"
+     misc_feature    1068..1087
+                     /note="TALEN_TET1_R5"
+ORIGIN      
+          1 TGTAGCTGTC TTCAGACACA CCAGAAGAGG GAATCAGATC TTGTTACAGA TGGTTGTGAG
+         61 CCACCATGTG GTTGCTGGGA TTTGAACTAA GGACCTTTGG AAGAGCAGTC GGGGGCTCTT
+        121 ACCTGCTGAG CCATCTCACC AGACCCTGTG GTTTCCTTTT TAAATTTTTT TTAAATTAAG
+        181 ATTTTTCTCT GAGATGGGGT TTCTCTGTGT AGCCCTGGTT GTCCTGGAAC TCTGTAGACC
+        241 AGGCTGGCCT TGAATTCAGA GATCCACCTG CCTCTGCCTC TAAATCGCTG GGATCAAAGG
+        301 AGGAGTGCGC CATCACCACC ATGCAAAAAT TTGTGTTTTT GTGTATGGGT GTTTGACTGT
+        361 ATGTTTGTCT GTGCACCAAG TGTGCATGCC TGGTGCCTAA GGAGCCAAGA AGAGGGCAGC
+        421 AGATGGCCTG GAACTGAAGT TACAGTTGTG AATCGCCATG TACATGCTGG GAATTGAGCC
+        481 CAGGTCTACT GTAAAAGCAG GCAACAGCCT TAATTTCAAG CCACGGGTCT AGGTTCCCTT
+        541 TTATTTGAGA CAGGATCTCG TGTAGCCCAG ACTGGCCTCA GATTCACTAT GTAGCTATGG
+        601 ATGGCCTCAA ACTCCGATGA TCCTGCCTCT ACCTAAATAT CTGGGCAATG TTGTGACTCA
+        661 TGCAACTAAC TCAGTCTCCC AAATGCTGGG AATAAAAATT TGAGCCACTT TACCAAGCTA
+        721 AATACTATCT GCATATGGTA GCTATACAGA GAAACCCTGT CTCGAAAAAC CAAAAAAAAA
+        781 AAAAAAAAAA AATCTCAGTT TTCTAGTTAT TAAGTTATTA GCAAATCTCT TTCTAGTAGA
+        841 GTACAAAGGA CTAATAATAA TATTTGCTAT TGTTATTTTA GACCCCAAAC TCAGGTGACC
+        901 AAGCTTGGCA ACACCTCCAG ATTCTCCTCA AAAGGAAGAT TTTGCAAAGG ACCAATGACA
+        961 CTGTGCCCCG CATCCTTGCA TCTTTACTTA CTCTGCAGCC ATGTCTCGGT CCCGCCCCGC
+       1021 AAAGCCTTCC AAATCAGTCA AAACAAAGCT ACAGAAAAAG AAAGACATCC AGATGAAGAC
+       1081 GAAGACATCA AAGCAGGCTG TCAGACATGG GGCATCAGCG AAGGCAGTGA ACCCCGGAAA
+       1141 ACCGAAGCAA TTAATTAAAA GAAGAGATGG TAAGAAGGAA ACGGAAGACA AAACCCCGAC
+       1201 ACCGGCGCCG AGTTTTCTGA CGCGAGCCGG GGCCGCCCGA ATGAATCGGG ATCGAAACCA
+       1261 AGTTCTTTTT CAGAACCCAG ACTCCTTAAC TTGCAACGGG TTTACAATGG CTCTTCGAAG
+       1321 AACCTCTCTT AGCTGGCGAC TCTCCCAGCG CCCAGTAGTC ACACCCAAAC CTAAGAAAGT
+       1381 ACCACCTTCA AAGAAGCAGT GTACACATAA TATCCAGGAC GAGCCGGGGG TAAAGCACTC
+       1441 TGAAAATGAT TCAGTCCCCA GCCAACACGC TACCGTGTCC CCAGGCACAG AGAATGGTGA
+       1501 ACAGAACAGG TGTTTAGTTG AAGGGGAGAG CCAAGAGATA ACCCAGTCTT GCCCTGTATT
+       1561 TGAGGAAAGA ATAGAAGATA CCCAAAGCTG TATTTCCGCA TCTGGGAACC TGGAAGCAGA
+       1621 AATTTCTTGG CCACTGGAAG GGACACATTG TGAAGAACTA CTTTCTCATC AGACATCTGA
+       1681 TAATGAGTGC ACTTCCCCTC AAGAGTGTGC TCCATTGCCC CAAAGATCAA CTTCCGAAGT
+       1741 TACCTCTCAG AAAAACACTA GCAATCAGTT AGCAGACTTG AGCTCACAAG TAGAGTCTAT
+       1801 CAAGCTGTCT GATCCTTCTC CGAATCCTAC GGGAAGCGAC CATAATGGCT TTCCAGACTC
+       1861 CAGTTTTAGG ATCGTTCCTG AATTGGACCT GAAAACCTGC ATGCCTCTTG ATGAGTCTGT
+       1921 GTATCCCACA GCTCTGATAA GATTCATCTT GGCAGGCTCA CAGCCGGATG TCTTTGATAC
+       1981 TAAGCCCCAA GAAAAAACCC TTATAACAAC CCCAGAACAA GTGGGAAGCC ACCCAAATCA
+       2041 AGTTCTGGAT GCCACCTCTG TCCTAGGACA GGCCTTTAGT ACTCTTCCAC TTCAGTGGGG
+       2101 ATTTTCTGGT GCTAACTTAG TTCAAGTTGA GGCCCTGGGC AAGGGTTCAG ACTCACCAGA
+       2161 GGATCTTGGT GCTATTACTA TGCTAAACCA ACAAGAAACT GTGGCTATGG ATATGGATAG
+       2221 GAATGCTACC CCGGACCTGC CTATCTTCCT TCCTAAGCCT CCAAACACAG TTGCTACCTA
+       2281 CAGTAGCCCT CTTTTAGGGC CTGAGCCCCA CAGCTCTACC TCCTGTGGGC TTGAAGTCCA
+       2341 AGGTGCTACC CCGATTTTAA CTTTGGACTC AGGACACACT CCCCAACTCC CACCAAACCC
+       2401 TGAGTCAAGT TCAGTACCTC TGGTAATAGC TGCAAACGGT ACGCGAGCTG AGAAGCAGTT
+       2461 TGGTACCAGC CTTTTCCCAG CCGTCCCACA AGGGTTTACA GTCGCAGCCG AGAATGAAGT
+       2521 CCAGCATGCC CCATTAGATC TTACCCAGGG TTCTCAGGCT GCTCCCAGCA AACTGGAAGG
+       2581 AGAGATTTCT CGGGTCAGCA TCACTGGCTC AGCTGATGTC AAAGCCACAG CGATGTCCAT
+       2641 GCCGGTTACA CAGGCCAGTA CCTCTTCTCC CCCATGTAAT TCTACGCCGC CAATGGTGGA
+       2701 GAGGAGGAAG CGCAAGGCCT GTGGGGTCTG TGAGCCGTGC CAGCAGAAGG CCAACTGTGG
+       2761 GGAGTGCACC TACTGCAAGA ATCGAAAGAA CAGCCACCAG ATCTGTAAGA AGAGGAAATG
+       2821 CGAGGTGCTC AAAAAGAAGC CAGAGGCCAC CTCACAGGCA CAGGTGAGCG CAGCCCGGGG
+       2881 CTGGGATCTC CTGTGTTTGG CGCAGCATCA GTCCCCGCCC CTAAGAATTT GTGGATGGCA
+       2941 TCTTGTGGTA GATTGGTGCT GGGGATTGAA TCTAGGGGTT TCCCCGAGCT AAGCGTGTTC
+       3001 TCTACCCTTA CCTGCCGCTT CCTCAGACAT AGCCAAACCG AAGTTTTTCA TCTTGAGACC
+       3061 TGTATAGCTG AGGTTGTGTG TAGCTAGCCA AGGCTTACCA TAATCTCTAG TCGTCCTGCG
+       3121 TTGGGTAGCT CAGGACTACC TGAGACTCCT GTTCCAGAAC AGTGAGGTTC TGAGCACCCT
+       3181 TGCATGCAGA CGCACATACA TAAGAATAAA TCCTTTTTTT TAACATTGAA ATAAGGGCCA
+       3241 GCGAGATGGC TCAGTGGGGA AAGGTCCCCA AGTCTGATAA ACCTGAGCTT GAGGCTTGGG
+       3301 ACCTGCATAG TGGAAGGGAA AGAACCAACT CTTGAACCTT CTCCACAGAC TTCACCACGG
+       3361 CCATGTCAGG CATGGGCTCG TGAGTGATTC AGGGTCACTA TGAATTTGAG GCCAACCTGG
+       3421 ACCATGTAGC AAGTTCAGGG TAACCTGAGC CCCCTTACGT CTAAGAAGAT TGTGAGCCTT
+       3481 TAAACTGCAG TGGTCTTTTA ACTTCTCTGG ACTTCCATTA CCGATCTTAA ACTGCTGCTG
+       3541 CCTGCTTAGC TCAGACTTTG AAAAGGGGTT AGACAATTAG CCAGTCCTGT GTTGATGGGC
+       3601 ATTGAAAGGC TGTCTCCCCA GATGGATACT TACTGACATG GGCACCTGTT TAATCCCAGC
+       3661 ACTCAGATGC TGAGGCAGGA GGATTGCCTT GTGGTTGAGG TCCACCTAGG TTATAGCATG
+       3721 ACCATTTCTA AAAATACCAA AAGTAGGGAG GGGTCTGGGA AGATAAATTT TTAATGTTTA
+       3781 AATTTTTGTG TTTTTGTTTT TTTTCATGAC AGGGTTTCTC TGTGTAGCCC TGGCTGTCCT
+       3841 GGAACTCACT CTGTAGACCA GGCTGGCCTC GAGCTCAGAA ACCCGCCTCT GTCTCCCAAG
+       3901 TGCTGGGATT AAAGATGTGC TGCACCACCA CCTCCCAGCT TTTTTTTTTT TTAAGATTTA
+       3961 TTTACTTTAT TTATATGTTG TATCTGTCTT CAAACAACAG AATCAGATCC CATTACAGAT
+       4021 GGCTGTGAGC CACCATGTGG TTTGCTGGGA ATTGAACTCA GGACCTCAGG AAGAGCAGTC
+       4081 AGTGCTCTTA AGCACTGAGC CATCTCTCCA GCCCCCATTA AAAAATTTTT TTTAGTGACA
+       4141 AAATCACATT GTTTAGACCA TGTAGGCTAC AACTAAAACC GATCTATCTT TATCTCCTGA
+       4201 GTACTGGGAT AATAGTGTGA ACTACTTCAA CCAGGCAACC ATTTTATACA CACACACACA
+       4261 CACACACACA CACACACACA CACACACACA CACACACACG AGTTATGAAT AGTTTACACA
+       4321 TACATCTCTA ACACAATAGG AGCATTGTTG CTATTGCTAG CAGGGCAATC TCCCTTGTAT
+       4381 GCCGAGGCCT GAGCCATTCC AAACACTTCA TAATCAAACT CTGGTTAATA CAGCATGGAC
+       4441 CACAGATTTG TTGTCCATTC AAGCCCCTCC CCCTTTTGTT CAGCGGCTTA CCATCATCTA
+       4501 TCTATGTGAT TACTCAAAAT ACCAAAGCTA TTGGTCTTTG CTATCTCCTC CATCTTCTAT
+       4561 TGCATGACAA GGTCTGTGGG CCTGCTTATC CACCTGTTTG TTTTTTGTTT TTTAGTTTTT
+       4621 TTTTTTTTTG AGACAGGGTT TCTCTGTGTA GCCCTGGTTG TCCTGGAACT CGCTCTGTAG
+       4681 ACCAGGCTGG TCTCAAACTC AGAGATCCAC CTGCCTCTTC CTCCTAAGTT CTGAGTTAAA
+       4741 GGCGTTCGCC ACCACGCCCG GCTCTCCACC TATTTGATCA CAGCTGTATC TGAAGCCTTT
+       4801 ATTTGTTGCT GTGAGAATTT CAATATTCAA TTTGCTATCA ATTTGTGGGT TTTTTTGACA
+       4861 TATCTATATG ACATATATGA TATATGCCAT ATATCATATA TGTCATACAC ATATATTTTA
+       4921 AATTTTTTAA CAAGATTTAG TCACAAAAAA GCCACTAGCA TGTGGCTAAA AGTAAATAGG
+       4981 CTGGGTGGGC ATGGTGGCAT GAGTTTTAGT CCTAGCACCT GGGAGGCAAG CAGATTTCTG
+       5041 AAATTCAAGG CAAACCTGGC CTACATAATG AGTTCCAGGA CAGCCAAAGC TACATAGAAA
+       5101 GACTCTATCT CAAAAAACAA GAGAAAACAA TAAAAAGAAA TGATGAAATA GTAAAAATGT
+       5161 ATAAGCCCAG AAGCGATCCA TGAAACTTCA GTTTGTTAGC
+//
+
