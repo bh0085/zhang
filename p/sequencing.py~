@@ -1,0 +1,17 @@
+def run_directory(directory)
+def load_seqs(seq_dir):
+    seqs = {}
+    for f in os.listdir(seq_dir):
+        fopen = open(os.path.join(seq_dir,f))
+        lines = fopen.readlines()
+        seqs[lines[0][1:].strip()] = ''.\
+            join([l.strip() for l in lines[1:]]) 
+        fopen.close()
+    return seqs
+
+def align_seqs():
+    ls = load_seqs()
+    return [ali.run_with_seqs(\
+            ls.values()[0].replace('N',''),\
+                ls.values()[i].replace('N',''))[1] 
+            for i in range(5)]

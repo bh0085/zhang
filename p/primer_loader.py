@@ -37,6 +37,7 @@ rev_primer sequence (5' - 3')
 }...
 '''
     primers = {}
+    ctr = 0
     for f in files:
         fopen = open(f)
         lines = fopen.read()
@@ -48,6 +49,9 @@ rev_primer sequence (5' - 3')
                  [elt.strip()  for elt in m.group('names').split(',')],
                  [elt.strip() for elt in m.group('seqs').splitlines() ])
                 for m in re.finditer(pattern, lines)]
+        for i,e in enumerate(hits):
+            hits[i] = tuple(['{0}-{1}'.format(ctr,e[0])]+list(e[1:]))
+            ctr += 1
 
         primers.update(dict([(e[0], 
                               {'fwd':e[2][0],'rev':e[2][1],
@@ -95,6 +99,18 @@ primers with six nucleotides appended'''
       #CHECK BSAI SITES IN ONE FILE AT A TIME
       sw('checking for bsai sites:\n')
       overhangs = bsai_overhangs(primers)
+      olist =[ o[1] for o in overhangs]
+      overhangs_rc = [str(zutils.reverse_complement(oh) ).upper() 
+                      for oh in olist]
+
+      print 'len overhang set: {0} '.format(len(set(olist)))
+      print 'len overhang union rc: {0} '.format(len(set(olist+overhangs_rc)))
+      assert( len(set(olist)) * 2 == len(set(olist+overhangs_rc)))
+    
+      print 'Checking for palindromes... '
+      print sorted(olist+overhangs_rc)
+      print 'none exist!'
+
       pseqs = primer_seqs(primers)
       ntot = len(primers);  np = len(pseqs)
 
